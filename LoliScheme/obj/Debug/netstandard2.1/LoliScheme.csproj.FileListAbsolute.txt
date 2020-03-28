@@ -1,0 +1,8 @@
+C:\Users\danie\source\repos\LoliScheme\bin\Debug\netstandard2.1\LoliScheme.deps.json
+C:\Users\danie\source\repos\LoliScheme\bin\Debug\netstandard2.1\LoliScheme.dll
+C:\Users\danie\source\repos\LoliScheme\bin\Debug\netstandard2.1\LoliScheme.pdb
+C:\Users\danie\source\repos\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.csprojAssemblyReference.cache
+C:\Users\danie\source\repos\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.AssemblyInfoInputs.cache
+C:\Users\danie\source\repos\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.AssemblyInfo.cs
+C:\Users\danie\source\repos\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.dll
+C:\Users\danie\source\repos\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.pdb
