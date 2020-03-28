@@ -57,14 +57,10 @@ namespace LoliScheme
 
                 foreach (var innerExpression in completedExpression)
                 {
-
-
-
                     if (innerExpression.Last() == ' ')
                         calculatedExpresssions.Add(FromString<T>(innerExpression.Substring(0, innerExpression.Length - 1)).Calculate());
                     else
                         calculatedExpresssions.Add(FromString<T>(innerExpression).Calculate());
-
                 }
 
                 foreach (var arg in secndArgs.Split(' ').Where(str => !(string.IsNullOrWhiteSpace(str) || string.IsNullOrEmpty(str))))
@@ -79,9 +75,6 @@ namespace LoliScheme
                 T[] args = expr.Split(' ').Skip(1).Select(s => new T().Parser(s)).ToArray();
                 return CreateExpression(operation, args);
             }
-
-//            throw new NotImplementedException();
-            //return CreateExpression(operation, );
         }
 
 
