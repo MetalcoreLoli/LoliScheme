@@ -30,29 +30,47 @@ namespace LoliScheme
 
                 List<string> completedExpression = new List<string>();
 
-                for (int i = 1; i <= innerExpressions.Count; i++)
-                {
-                    if(!innerExpressions[i - 1].Contains(')'))
-                    {
-                        completedExpression.Add(innerExpressions[i - 1] + innerExpressions[i]);
-                        innerExpressions.Remove(innerExpressions[i - 1]);
-                    }
-                    else
-                        completedExpression.Add(innerExpressions[i - 1]);
-                }
-
                 List<T> calculatedExpresssions = new List<T>();
 
-                var firstArgs = 
+                var firstArgs =
                     expr.Skip(1).TakeWhile(c => c != '(').Aggregate("", (acc, sym) => acc + sym);
 
 
                 var secndArgs =
                         expr.TakeFromLastWhile(c => c != ')').Aggregate("", (acc, sym) => acc + sym);
 
+
                 foreach (var arg in firstArgs.Split(' ').Where(str => !(string.IsNullOrWhiteSpace(str) || string.IsNullOrEmpty(str))))
                 {
                     calculatedExpresssions.Add(new T().Parser(arg));
+                }
+
+                for (int i = 1; i <= innerExpressions.Count; i++)
+                {
+                    if (!innerExpressions[i - 1].Contains(')'))
+                    {
+                        completedExpression.Add(innerExpressions[i - 1] + innerExpressions[i]);
+                        innerExpressions.Remove(innerExpressions[i - 1]);
+                    }
+                    else
+                    {
+                        if (innerExpressions[i - 1].Last() != ')')
+                        {
+                            string str = innerExpressions[i - 1].TakeFromLastWhile(c => c != ')').Aggregate("", (acc, sym) => acc + sym);
+                            completedExpression.Add(innerExpressions[i - 1].Substring(0, innerExpressions[i - 1].Length - str.Length));
+                            if (!str.Split(' ', StringSplitOptions.RemoveEmptyEntries).Contains(""))
+                            {
+                                foreach (var  num in str.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+                                {
+                                    calculatedExpresssions.Add(new T().Parser(num));
+                                }
+                            }
+                        }
+                        else
+                        {
+                            completedExpression.Add(innerExpressions[i - 1]);
+                        }
+                    }
                 }
 
                 foreach (var innerExpression in completedExpression)

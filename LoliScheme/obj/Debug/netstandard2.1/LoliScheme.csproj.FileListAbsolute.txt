@@ -15,3 +15,11 @@ C:/Users/danie/source/repos/LoliScheme/obj/Debug/netstandard2.1/LoliScheme.pdb
 /home/daniel/Documents/Projects/CSharp/LoliScheme/LoliScheme/obj/Debug/netstandard2.1/LoliScheme.AssemblyInfo.cs
 /home/daniel/Documents/Projects/CSharp/LoliScheme/LoliScheme/obj/Debug/netstandard2.1/LoliScheme.dll
 /home/daniel/Documents/Projects/CSharp/LoliScheme/LoliScheme/obj/Debug/netstandard2.1/LoliScheme.pdb
+D:\Projects\CSharp\LoliScheme\LoliScheme\bin\Debug\netstandard2.1\LoliScheme.deps.json
+D:\Projects\CSharp\LoliScheme\LoliScheme\bin\Debug\netstandard2.1\LoliScheme.dll
+D:\Projects\CSharp\LoliScheme\LoliScheme\bin\Debug\netstandard2.1\LoliScheme.pdb
+D:\Projects\CSharp\LoliScheme\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.csprojAssemblyReference.cache
+D:\Projects\CSharp\LoliScheme\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.AssemblyInfoInputs.cache
+D:\Projects\CSharp\LoliScheme\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.AssemblyInfo.cs
+D:\Projects\CSharp\LoliScheme\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.dll
+D:\Projects\CSharp\LoliScheme\LoliScheme\obj\Debug\netstandard2.1\LoliScheme.pdb

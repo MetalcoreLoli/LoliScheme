@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LoliScheme.Operations
+﻿namespace LoliScheme.Operations
 {
     public enum Operation
     {
-        Add = 0,
-        Sub = 1,
-        Mul = 2,
-        Div = 3,
-        None = 4
+        Add         = 0,
+        Sub         = 1,
+        Mul         = 2,
+        Div         = 3,
+        DefineVal   = 4,
+        DefineFunc  = 5,
+        None        = 9
     }
 }

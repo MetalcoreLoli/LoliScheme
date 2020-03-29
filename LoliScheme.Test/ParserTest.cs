@@ -28,6 +28,20 @@ namespace LoliScheme.Test
             Assert.AreEqual(resultOfCalculation, resultOfParser.Calculate());
         }
 
+
+        [Test]
+        public void FromStringOneTest()
+        {
+            string expression = "(+ 1 (+ 2 3) 4 (+ 5 6))";
+            Expression<LoliInt> resultOfParser = Parser.FromString<LoliInt>(expression);
+
+            string result = "(+ 1 (+ 4 (+ 5 11)))";
+            LoliInt resultOfCalculation = new LoliInt(21);
+
+            Assert.AreEqual(result, resultOfParser.ToString());
+            Assert.AreEqual(resultOfCalculation, resultOfParser.Calculate());
+        }
+
         [Test]
         public void CreateExpressionTest()
         {

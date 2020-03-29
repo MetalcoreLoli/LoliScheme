@@ -17,7 +17,6 @@ namespace LoliScheme.Test
             two = new Expression<LoliInt>(2);
         }
 
-
         [Test]
         public void EqualsTest()
         {
@@ -84,5 +83,7 @@ namespace LoliScheme.Test
 
             Assert.AreEqual(result, resulOfCalculation);
         }
+
+
     }
 }
