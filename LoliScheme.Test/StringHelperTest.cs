@@ -17,5 +17,31 @@ namespace LoliScheme.Test
 
             Assert.AreEqual(exceptedResult, resultOfMethodsWork);
         }
+
+
+        [Test]
+        public void CountOfTest()
+        {
+            string str = "(+ 2 (+ 2 2) 2)";
+
+            int exceptedResult = 2;
+            int resultOfMethodsWork = str.CountOf('(');
+
+            Assert.AreEqual(exceptedResult, resultOfMethodsWork);
+        }
+
+        [Test]
+        public void RemoveAllSymbolsTest()
+        {
+            string str = "(+ 2 (+ 2 2) 2)";
+
+            string exceptedResult = " 2  2 2 2";
+            string resultOfMethodsWork = str.RemoveAllSymbols('(');
+
+            resultOfMethodsWork = resultOfMethodsWork.RemoveAllSymbols(')');
+            resultOfMethodsWork = resultOfMethodsWork.RemoveAllSymbols('+');
+
+            Assert.AreEqual(exceptedResult, resultOfMethodsWork);
+        }
     }
 }
